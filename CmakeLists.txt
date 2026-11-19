@@ -18,6 +18,7 @@ include(CTest)
 # Core business logic library
 add_library(marketflow_core
     src/models/order.cpp
+    src/order_book/order_book.cpp
 )
 
 target_include_directories(marketflow_core
@@ -63,6 +64,7 @@ if(BUILD_TESTING)
     add_executable(MarketFlowTests
         tests/sanity_tests.cpp
         tests/order_tests.cpp
+        tests/order_book_tests.cpp
     )
 
     target_link_libraries(MarketFlowTests

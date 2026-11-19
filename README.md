@@ -37,6 +37,13 @@ Planned features:
 - Partial and full fill tracking
 - Order cancellation and rejection
 - Trade data model
+- Price-time-priority order book
+- Separate bid and ask price levels
+- FIFO order priority within price levels
+- Best bid and best ask access
+- Order lookup using an unordered index
+- Order cancellation and removal of filled orders
+- Instrument-specific order book validation
 
 ## Technology Stack
 
