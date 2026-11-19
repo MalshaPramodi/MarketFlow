@@ -26,6 +26,18 @@ Planned features:
 - Automated unit and integration testing
 - Performance benchmarking
 
+## Implemented Features
+
+- C++20 project configuration with CMake
+- Automated testing with GoogleTest
+- Core order domain model
+- Buy and sell order representation
+- Integer-based price representation
+- Order lifecycle management
+- Partial and full fill tracking
+- Order cancellation and rejection
+- Trade data model
+
 ## Technology Stack
 
 | Technology | Purpose                        |
@@ -63,14 +75,31 @@ MarketFlow/
 └── LICENSE
 ```
 
-## Building the Project
+## Build and Run
 
-Build instructions will be added after the CMake configuration
-and initial implementation are established.
+Configure the project:
 
-## Testing
+```bash
+cmake -S . -B build
+```
 
-Automated tests will be implemented using GoogleTest.
+Build:
+
+```bash
+cmake --build build
+```
+
+Run the application:
+
+```bash
+./build/MarketFlow
+```
+
+## Run Tests
+
+```bash
+ctest --test-dir build --output-on-failure
+```
 
 ## Project Status
 
